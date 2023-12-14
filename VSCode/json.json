@@ -56,7 +56,28 @@
 		],
 		"description":"A reusable layout snippet"
 	},
-	  
+	"Prefill": {
+		"prefix": "prefill",
+		  "body": [
+		"{",
+		"\t\"$schema\": \"https://altinncdn.no/schemas/json/prefill/prefill.schema.v1.json\",",
+		"\t\"UserProfile\": {",
+		"\t\t\"Email\": \"${1}\",",
+		"\t\t\"Party.Name\": \"${2}\",",
+		"\t\t\"PhoneNumber\": \"${3}\",",
+		"\t\t\"ProfileSettingPreference.Language\": \"${4}\"",
+		"\t},",
+		"\t\"ER\": {",
+		"\t\t\"OrgNumber\": \"${5}\",",
+		"\t\t\"Name\": \"${6}\",",
+		"\t\t\"MailingAddress\": \"${7}\",",
+		"\t\t\"MailingPostalCode\": \"${8}\",",
+		"\t\t\"MailingPostalCity\": \"${9}\"",
+		"\t}",
+		"}"
+		  ],
+		  "description": "Snippet for model.prefill.json"
+	},
 	 /* 2. Components*/
 	"Header Component":{
 		"prefix":"header",
